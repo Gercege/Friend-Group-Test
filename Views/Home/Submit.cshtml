@@ -1,0 +1,812 @@
+@model Friend_Group_Test.Models.SelectedOptions
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+@{
+    ViewData["Title"] = "Test";
+}
+
+
+
+<style>
+    #a1 {
+        display: flex;
+        margin-right: 90%;
+        background-color: rgba(202, 202, 202, 0.567);
+        font-size: 25px;
+        height: 40px;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+        #a1:hover {
+            background-color: rgba(194, 194, 194, 0.77);
+            transition: 0.25s;
+        }
+</style>
+
+<div class="text-center">
+    <h3>You will answer the following questions and as a result we will see who gets more votes on that subject</h3>
+    <br>
+    <h4 style="color: red;">Don't vote for yourself</h4>
+</div>
+<form method="post" action="Home/Index">
+    <br><br><br>
+    <h4>Whose name is cooler</h4>
+
+    <label id="a1">
+        <input type="radio" name="Q1SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q1SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q1SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q1SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q1SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q1SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q1SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the funniest</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q2SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q2SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q2SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q2SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q2SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q2SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q2SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who survives a zombie attack</h4>
+
+    <label id="a1">
+        <input type="radio" name="Q3SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q3SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q3SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q3SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q3SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q3SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q3SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who dies first in a zombie attack</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q4SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q4SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q4SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q4SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q4SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q4SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q4SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the smartest</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q5SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q5SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q5SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q5SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q5SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q5SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q5SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who comes up with the most unique ideas</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q6SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q6SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+        <label id="a1">
+        <input type="radio" name="Q6SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q6SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q6SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q6SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q6SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who gives the worst advice</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q7SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q7SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q7SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q7SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q7SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q7SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q7SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who always shows up on time for meetings</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q8SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q8SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q8SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q8SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q8SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q8SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q8SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most late for meetings</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q9SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q9SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q9SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q9SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q9SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q9SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q9SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who might go to jail</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q10SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q10SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q10SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q10SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q10SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q10SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q10SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the coolest</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q11SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q11SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q11SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q11SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q11SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q11SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q11SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most generous</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q12SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q12SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q12SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q12SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q12SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q12SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q12SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the stingiest</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q13SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q13SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q13SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q13SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q13SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q13SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q13SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who talks the most</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q14SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q14SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q14SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q14SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q14SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q14SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q14SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who talks the least</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q15SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q15SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q15SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q15SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q15SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q15SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q15SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the happiest</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q16SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q16SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q16SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q16SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q16SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q16SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q16SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most depressed person</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q17SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q17SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q17SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q17SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q17SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q17SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q17SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who gets rich first</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q18SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q18SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q18SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q18SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q18SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q18SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q18SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who gets married first</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q19SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q19SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q19SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q19SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q19SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q19SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q19SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who will never get married</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q20SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q20SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q20SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q20SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q20SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q20SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q20SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the main character</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q21SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q21SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q21SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q21SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q21SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q21SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q21SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most extroverted</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q22SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q22SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q22SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q22SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q22SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q22SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q22SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most introverted</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q23SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q23SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q23SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q23SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q23SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q23SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q23SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most religious</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q24SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q24SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q24SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q24SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q24SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q24SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q24SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most irreligious</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q25SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q25SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q25SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q25SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q25SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q25SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q25SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most serious</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q26SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q26SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q26SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q26SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q26SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q26SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q26SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most unserious</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q27SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q27SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q27SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q27SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q27SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q27SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q27SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the kindest to their friends</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q28SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q28SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q28SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q28SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q28SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q28SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q28SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the rudest to their friends</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q29SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q29SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q29SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q29SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q29SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q29SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q29SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the most alcoholic</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q30SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q30SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q30SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q30SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q30SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q30SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q30SelectedOption" value="Yahya" required /> Yahya
+    </label>
+    <br />
+    <h4>Who is the secret billionaire</h4>
+
+
+    <label id="a1">
+        <input type="radio" name="Q31SelectedOption" value="Ege" required /> Ege
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q31SelectedOption" value="Kivanc" required /> Kivanc
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q31SelectedOption" value="Bugra" required /> Bugra
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q31SelectedOption" value="Arda" required /> Arda
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q31SelectedOption" value="Efe" required /> Efe
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q31SelectedOption" value="Timucin" required /> Timucin
+    </label>
+    <label id="a1">
+        <input type="radio" name="Q31SelectedOption" value="Yahya" required /> Yahya
+    </label>
+
+
+    <input type="submit" value="Submit" class="btn btn-success" />
+</form>
+<br />
+<br />
+<br />
